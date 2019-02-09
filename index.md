@@ -62,3 +62,9 @@ try model.write(to: URL(fileURLWithPath: "~/Desktop/AnimalClassifier.mlmodel))
 ```
 
 This will save the model on the desktop and we can use this model in the apps by dragging into the Xcode.
+
+### Further Reading
+
+If you want any further reading or information regarding CreateML, check out the Apple Developer Website.
+
+* [CreateML](https://developer.apple.com/documentation/createml/)
