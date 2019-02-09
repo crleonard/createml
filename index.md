@@ -58,7 +58,7 @@ This will evaluate the model against the test data and gives the results. We can
 Once the desired level of accuracy has been achieved then we are good to save the model. The model can be saved anywhere on the disk. We can save the created model using Swift.
 
 ```
-try model.write(to: URL(fileURLWithPath: "~/Desktop/FruitClassifier.mlmodel))
+try model.write(to: URL(fileURLWithPath: "~/Desktop/AnimalClassifier.mlmodel))
 ```
 
 This will save the model on the desktop and we can use this model in the apps by dragging into the Xcode.
