@@ -68,3 +68,5 @@ This will save the model on the desktop and we can use this model in the apps by
 If you want any further reading or information regarding CreateML, check out the Apple Developer Website.
 
 * [CreateML](https://developer.apple.com/documentation/createml/)
+
+Thanks, Chris!
