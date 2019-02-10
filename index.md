@@ -4,12 +4,13 @@ This project contains a number of Swift Playground files to help you learn the b
 
 ## Prerequisites
 
-What you will require to run these lessons.
+What you will require to run all three classifications.
 
 * Apple Mac
 * Xcode
 
-## Guide
+# 1) Image Classifier 
+
 ### Import Create ML
 
 The first step to create the machine learning model is to import the Core ML library in the Swift Playground. We might also need some other Apple frameworks like Foundation if we are using URL. It can be simply done by using.
@@ -62,6 +63,8 @@ try model.write(to: URL(fileURLWithPath: "~/Desktop/AnimalClassifier.mlmodel))
 ```
 
 This will save the model on the desktop and we can use this model in the apps by dragging into the Xcode.
+
+# 2) Text Classifier
 
 ### Further Reading
 
