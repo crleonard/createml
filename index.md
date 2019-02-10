@@ -66,6 +66,27 @@ This will save the model on the desktop and we can use this model in the apps by
 
 # 2) Text Classifier
 
+Now we will be building a simple Text Classifier using Create ML. As with the previous example and all machine learning models, we will first need some data to continue. [Download JSON file here](https://github.com/crleonard/createml/blob/master/resources/spam.json)
+
+```
+import CreateML
+import Foundation
+
+//1
+let data = try MLDataTable(contentsOf: URL(fileURLWithPath: "/Users/Path/To/spam.json"))
+let (trainingData, testingData) = data.randomSplit(by: 0.8, seed: 5)
+let spamClassifier = try MLTextClassifier(trainingData: trainingData, textColumn: "text", labelColumn: "label")
+//2
+let trainingAccuracy = (1.0 - spamClassifier.trainingMetrics.classificationError) * 100
+let validationAccuracy = (1.0 - spamClassifier.validationMetrics.classificationError) * 100
+//3
+let evaluationMetrics = spamClassifier.evaluation(on: testingData)
+let evaluationAccuracy = (1.0 - evaluationMetrics.classificationError) * 100
+//4
+let metadata = MLModelMetadata(author: "Sai Kambampati", shortDescription: "A model trained to classify spam messages", version: "1.0")
+try spamClassifier.write(to: URL(fileURLWithPath: "/Users/Path/To/Save/SpamDetector.mlmodel"), metadata: metadata)
+```
+
 ### Further Reading
 
 If you want any further reading or information regarding CreateML, check out the Apple Developer Website.
