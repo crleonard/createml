@@ -1,6 +1,6 @@
 # Getting Started with CreateML
 
-This project contains a number of Swift Playground files to help you learn the basics of Swift. The Playgrounds have been developed to be as simple and as understanding as possible. For the best learning experince, follow the lessons in order.
+This project contains a number of Swift Playground files to help you learn the basics of Swift. The Playgrounds have been developed to be as simple and as understanding as possible. For the best learning experince, follow the lessons in order. Also availbile at the link is a PDF containing more detailed information, along with screenshots to demonstrate the steps.
 
 ## Prerequisites
 
